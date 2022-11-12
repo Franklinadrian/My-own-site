@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro{
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-gap: 0.2rem;
+    grid-template-areas:
+    "nav nav nav "
+    "header header header"
+    "tri bi un"
+    "qua qui si";
+    grid-template-columns: repeat(auto-fill,minmax(20rem));
+  }
+ul{
+  list-style: none;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: rgb(223, 14, 14);
+  height: 40px;
+  width: 100%;
+  margin-top: 45px;
+  margin-right: 35px;
+}
+li{
+margin-left: 200px;
+
+}
+li a {
+  display: block;
+  color: white;
+float: left;
+  padding: 13px 15px;
+  text-decoration: none;
+  background-color:rgb(223, 14, 14)
+}
+li a i{
+  background-color: rgb(50, 50, 50);
+}
+.nav{
+  grid-area: nav;
+}
+.header{
+  grid-area: header;
+}
+.un{
+  grid-area: un;
+margin-left: 100px;
+}
+.un p{
+  width:250px}
+
+.bi{
+  grid-area: bi;
+  margin-left: 75px;
+
+}
+.tri{
+  grid-area: tri;
+  margin-left: 100px;
+}
+.qua{
+  grid-area: qua;
+  margin-left: 75px;
+}
+.qui{
+  grid-area: qui;
+  margin-left: 75px;
+}
+.si{
+  grid-area: si;
+  margin-left: 100px;
+}
+.si p{
+  width: 250px;
+}
+[class*="intro"] {
+  width: 100%;
+}

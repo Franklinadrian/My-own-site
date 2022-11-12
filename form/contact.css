@@ -1,0 +1,15 @@
+*{
+  background-color: black;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+.info{
+  text-align: center;
+  border: 3px solid whitesmoke;
+ margin-left: auto;
+ margin-right: auto;
+  
+}
+button{
+  background-color:red;
+}
